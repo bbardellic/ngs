@@ -8,14 +8,19 @@ const { PI, E, SQRT2 }  = Math;
 // const { readFile } = require('fs');
 
 
-// const circle = {
-//   label: 'circleX',
-//   radius: 2,
-// };
-//
+const circle = {
+  label: 'circleX',
+  radius: 2,
+};
+
 // const circleArea = ({ radius }) =>
 //   (PI * radius * radius).toFixed(2);
-//
+
 // console.log(
 //   circleArea(circle)
 // );
+
+const circleArea = ({radius}, {precision = 2} = {}) =>
+    (PI * radius * radius).toFixed(precision);
+
+console.log(circleArea(circle));

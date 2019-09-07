@@ -15,9 +15,12 @@ fetch('https://www.javascript.com/')
   .then(data => {
     console.log(data.length);
   });
-
+console.log("asdasdasda");
   (async function read() {
     const data = await fetch('https://www.javascript.com/');
 
     console.log(data.length);
   })();
+
+console.log("asdasd111asda")
+
